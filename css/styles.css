@@ -65,7 +65,6 @@ header .container {
 .header-nav {
   display: flex;
   align-items: center;
-
 }
 
 .header-nav-list {
@@ -141,7 +140,13 @@ header .container {
   margin: 0 auto;
   height: 600px;
   flex-shrink: 0;
-  background-color: #2e2f42;
+  /* background-color: #2e2f42; */
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+    background-size: content;
   padding: 188px 0;
 }
 .hero-btn {
@@ -175,9 +180,7 @@ header .container {
   gap: 24px;
 }
 .benef-list-item {
-  /* margin-right: 24px; */
-  width: calc((100% - 72px) / 4);
-  /* flex-basis: calc((100% - 3 * 24px)); */
+  width: calc((100% - 72px) / 4);  
 }
 
 .benef-title {
@@ -198,7 +201,6 @@ header .container {
 /* Our team */
 
 .team {
-
   background: #f4f4fd;
 
   padding: 120px 0;
@@ -231,6 +233,7 @@ header .container {
 .team-people {
   padding: 32px 0;
 }
+
 .team-title {
   color: #2e2f42;
   text-align: center;
@@ -249,8 +252,25 @@ header .container {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-  /* margin-bottom: 32px; */
-  text-align: center; 
+  text-align: center;
+}
+.team-links{
+  
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+list-style-type: none;
+
+}
+.team-links-item{
+ display: flex;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Portfolio */
@@ -315,7 +335,6 @@ header .container {
   letter-spacing: 0.02em;
 }
 /* FOOTER */
-
 
 .footer {
   padding: 100px 0;
